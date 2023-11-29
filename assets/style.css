@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: rgb(209, 202, 253);
+}
+
+h1 {
+    color: rgb(106, 95, 182);
+    font-size: 50px;
+}
+
+#quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hide {
+    display: none;
+}
+
+#timer {
+    font-size: 20px;
+    color: rgb(143, 139, 139);
+}
+
+#start-button {
+    color: rgb(209, 202, 253);
+    font-size: 30px;
+    background-color: rgb(106, 95, 182);
+    border-color: rgb(143, 139, 139);
+    border-style: dotted;
+    border-width: medium;
+}
+
+#question-text {
+    font-size: 25px;
+    color: rgb(72, 62, 134);
+}
+
+.answer-option {
+    font-size: 20px;
+    background-color: rgb(72, 62, 134);
+    color: rgb(209, 202, 253);
+}
+a {
+    color: rgb(47, 39, 103);
+    font-size: 12px;
+}

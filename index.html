@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Quiz!</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+
+<header>
+    <div id="header">
+        <a href="highscores.html" >Highscores</a>
+        <p id="timer">Time: <span id="time-remaining">60</span> seconds</p>
+    </div>
+</header>
+
+
+
+<body>
+    <div id="quiz-container"> 
+        <h1>Color Quiz</h1>
+        <button id="start-button">Start Color Quiz!</button>
+        <div id="question-container" class="hide">
+            <p id="question-text"></p>
+            <button class="answer-option">A</button>
+            <button class="answer-option">B</button>
+            <button class="answer-option">C</button>
+        </div> 
+        <p id="message"></p>
+        <div id="result-container" class="hide">
+            <p id="result-text"></p>
+            <button id="save-button">Save</button>
+        </div>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+
+
+
+</html>
