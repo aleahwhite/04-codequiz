@@ -1,7 +1,9 @@
 let timer;
 
+// when DOM fully loaded, execute function
 document.addEventListener('DOMContentLoaded', function () {
 
+    // constant variables 
     const startButton = document.getElementById('start-button');
     const questionContainer = document.getElementById('question-container');
     const resultContainer = document.getElementById('result-container');
@@ -16,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentQuestionIndex = 0;
     let score = 0;
 
+    // array of questions,options, and answers
     const quizQuestions = [
 
         {
@@ -49,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     ];
 
+    // function to start the quiz
     function startQuiz() {
         startButton.classList.add('hide');
         questionContainer.classList.remove('hide');
@@ -56,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
         displayQuestion();
     }
 
+    // function to show the question
     function displayQuestion() {
         const currentQuestion = quizQuestions[currentQuestionIndex];
         questionText.textContent = currentQuestion.question;
@@ -65,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // checking answer function
     function checkAnswer(answer) {
         const currentQuestion = quizQuestions[currentQuestionIndex];
 
@@ -73,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         else {
             timer -= 5;
+            // I'm not 100% sure this works but couldn't figure out any other way to do it
             messageEl.textContent = "Wrong Answer:( -5 seconds!";
             timeRemainingEl.textContent = timer;
         }
@@ -87,6 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    // function to start the timer
     function startTimer() {
         let timeRemaining = 60;
         timer = setInterval(() => {
@@ -109,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function saveScore() {
         const initials = prompt('Enter initials and time left');
-        alert('score saved')
     }
 
 
