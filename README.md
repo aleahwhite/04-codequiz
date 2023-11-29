@@ -4,8 +4,8 @@
 The motivation for this website was to use HTML, JavaScript, and CSS to create a 60 second quiz with a series of questions about colors! When you get the question you will be given three options for an answer. Answer right, you will get a king message but answer wrong and you will get -5 from your score. 
 
 ## Image and link:
-![Alt text](quiz-screenshot.png)
-Link to deployed website: 
+![Alt text](./assets/quiz-screenshot.png)
+Link to deployed website: https://aleahwhite.github.io/04-codequiz/
 
 ## Installation:
 N/A
